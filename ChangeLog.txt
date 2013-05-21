@@ -1,0 +1,239 @@
+=====================================================
+=================== TenTego 2.0.3 ===================
+=====================================================
+
+Poprawa przyjaznych linków
++ _themes/default/search.php
++ _themes/minimalistic/search.php
++ _themes/default/favorites.php
++ _themes/minimalistic/favorites.php
+
+Poprawa linków w aplikacji PW
++ admin/apps/inbox/app_page.php
+
+Poprawa wczytywania skryptu JS przy PW
++ admin/apps/inbox/app_page.php
+
+Dodanie szablonu “minimalistic”
++ _themes/minimalistic/
+
+Poprawa linków w wiadomościach email
++ admin/apps/users/app_page.php
+
+Nadanie typu statycznego metodzie kernel::make_notify()
++ admin/sys/kernel.php
+
+Aktualizacja wtyczki apiconfirm
++ admin/lib/apiconfirm.lib.php
+
+=====================================================
+=================== TenTego 2.0.2 ===================
+=====================================================
+
+Zmiana zawartości pliku “ReadMe.txt” 
+
+Ulepszono system weryfikacji linków YouTube
++ admin/apps/manager/app_page.php
+
+Zmiana mechanizmu składowania danych w aplikacjach
++ admin/apps/manager/tentego_manager.sql
++ admin/apps/ads/tentego_ads.sql
++ admin/apps/inbox/tentego_inbox.sql
++ admin/apps/settings/tentego_settings.sql
+
+Poprawienie usuwania grupowego obrazków
++ admin/apps/manager/app_admin.php
+
+Poprawa linków w szablonie
++ _themes/default/categories.php
++ _themes/default/header.php
++ _themes/default/footer.php
+
+Aktualizacja biblioteki ImageWorkshop
++ admin/lib/imageworkshop/
++ admin/apps/manager/app_page.php
+- admin/lib/imageworkshop.lib.php
+
+Poprawiono funkcję host()
++ admin/apps/settings/app_page.php
+
+Poprawiono edycję reklamy
++ admin/apps/ads/app_admin.php
+
+Poprawiono funkcję changeSigns()
++ _core/rewrite.php
+
+Poprawiono przyjazne linki
++ _themes/default/waiting.php
+
+=====================================================
+=================== TenTego 2.0.1 ===================
+===================================================== 
+
+Poprawiono przyjazne linki
++ admin/apps/manager/app_page.php
++ _themes/default/index.php
++ _themes/default/img.php
++ _themes/default/categories.php
++ _themes/default/contact.php
++ _themes/default/header.php
++ _themes/default/search.php
++ _core/rewrite.php
++ .htaccess
+
+Zmiana funkcji exif_imagetype na getimagesize
++ admin/apps/manager/app_page.php
++ admin/apps/users/app_page.php
+
+Usunięcie błędu wyszukiwania znaku specjalnego
++ admin/apps/managers/app_page.php
+
+Poprawiono wyświetlanie reklam
++ admin/apps/ads/app_page.php
++ admin/apps/ads/app_admin.php
+
+Dodano plik ReadMe.txt
+
+Zaktualizowano zabezpieczenia
++ inbox.php
++ add.php
++ favorites.php
++ profile.php
++ admin/apps/inbox/app_page.php
+
+Usunięto problem z wczytywaniem stylu:
++ _themes/.htaccess (usunięto plik)
+
+Zaktualizowano zabezpieczenia:
++ admin/apps/manager/app_page.php
+
+Zaktualizowano zabezpieczenia:
++ admin/sys/kernel.php
++ admin/apps/manager/app_page.php
++ admin/apps/users/app_page.php
+
+Poprawiono błąd w dublowaniu “/” w adresie strony
++ _core/kernel.php
+Poprawiono błąd z wyszukiwaniem obiektów przy włączonej opcji przyjaznych linków
++ _themes/default/search.php
+
+Poprawiono błąd z wyświetlaniem:
++ Strict Standards: Non-static method kernel::host() should not be called statically, assuming $this from incompatible context in xxx
++ _core/kernel.php
+
+Logo wyświetla się przy włączonej opcji przyjaznych linków
++ admin/apps/settings/tentego_settings.sql
+
+=====================================================
+=================== TenTego 2.0.0 ===================
+===================================================== 
+
+Dodanie opcji moderatorskich
++ admin/apps/manager/app_page.php
++ admin/apps/users/app_page.php
++ admin/mod.php
+
+Sprawdzanie czy klip video istnieje
++ admin/apps/manager/app_page.php
+
+Zmiany kosmetyczne
+
+Działające przyjazne linki
+
+Zmieniono favorites.js vote.js na tools.php?favorites tools.php?vote
+
+Dodano opcję do Ustawień
+
+Dodanie linków do kategorii przy obiektach
++ admin/apps/manager/app_page.php
+
+Naprawienie błędu z listowanie kategorii przy dodawaniu
++ admin/apps/manager/app_page.php
++ _themes/default/img.php
+
+Usunięcie wyświetlania błędu w przypadku nieistniejącego filmu Vimeo
++ admin/apps/manager/app_page.php
+
+Przyjazne linki
++ _core/rewrite.php
++ _themes/default/*
++ admin/apps/settings/app_page.php - zmiana funkcji host() -> dodanie http://
++ admin/apps/manager/app_page.php
+
+Dodanie pliku .htacces do /uploads/, który chroni przed wykonaniem się skryptów.
+
+Zmiana nazwy zapisywanych plików (dodanie uid)
++ admin/apps/manager/app_page.php
+
+Dodano importer TT1->TT2
+
+Zmiana klasy obsługującej obrazki
++ admin/apps/manager/app_page.php
++ admin/apps/users/app_page.php
+
+Usunięcie wymagania podania źródła obiektu
++ admin/apps/manager/app_page.php
+
+Dodanie znaku małpy (@) do captchy
++ admin/lib/captcha/image.php
+
+Przeniesienie skryptu rozwijanych divów do _theme/default/scripts.js
++ _theme/default/profile.php
++ _theme/default/user.php
+
+Zamiana formularzy na metody
++ _theme/default/profile.php
++ _theme/default/add.php
++ _theme/default/login.php
++ _theme/default/register.php
+
+Wyeliminowano błąd: “Niepoprawne dane wejściowe”
++ _themes/default/img.php
++ admin/apps/manager/app_page.php
+
+Zmiana [if yt] na [video=pattern]
++ admin/apps/manager/app_page.php
++ _themes/default/img.php
++ _themes/default/categories.php
++ _themes/default/index.php
++ _themes/default/search.php
++ _themes/default/waiting.php
+
+Przeniesienie formularzy z szablonu do metody
++ admin/apps/manager/app_page.php
++ admin/apps/users/app_page.php
++ _themes/default/login.php
++ _themes/default/register.php
++ _themes/default/add.php
++ _themes/default/profile.php
+
+Dodano przypomnienie hasła
++ admin/apps/users/app_page.php
+
+Przeniesienie na główną, kiedy obiekt nie istnieje
++ _themes/default/img.php
++ admin/apps/manager/app_page.php
+
+Kliknięcie na obrazek powoduje przeniesienie na stronę img.php
+(zmiana #OBJECT# na [object url=adres])
++ admin/apps/manager/app_page.php
++ _themes/default/img.php
++ _themes/default/categories.php
++ _themes/default/index.php
++ _themes/default/search.php
++ _themes/default/waiting.php
+
+Dodanie masowego mailingu
++ admin/apps/users/app_admin.php
+
+Poprawiono centrowanie pliku mniejszego niż ramka
++ _themes/default/scripts.js
+
+Aktualizacja instalatora
++ admin/install.php
+
+Zmiana sposobu weryfikacji linku wideo
++ admin/apps/manager/app_page.php
+
+Usunięcie problemu z krzakami maila aktywującego konto.
++ admin/apps/users/app_page.php

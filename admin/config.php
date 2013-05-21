@@ -1,0 +1,1 @@
+									<?php										//Plik konfiguarcyjny wygenerowany przez instalator (2013-05-18 17:11:03)										$host = "localhost";										$user = "root";										$pass = "";										$db = "lapowka";									?>
